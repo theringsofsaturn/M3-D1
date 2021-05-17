@@ -15,6 +15,15 @@ function ex1(int1, int2) {
 // 2)
 // Create a function to check two given numbers. Return true if one of the numbers is 50, or if their sum is 50.
 
+function ex2(int3, int4) {
+  let sumResult2 = int3 + int4;
+  if (sumResult2 === 50 || int3 === 50 || int4 === 50) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 // 3)
 // Create a function to remove a character at the specified position of a given string and return the new string.
 
