@@ -38,20 +38,41 @@ function ex3(str, pos) {
 //  Create a function to find the largest of three given integers.
 
 function ex4(givenNum1, givenNum2, givenNum3) {
-  let largest;
-  if (givenNum1 > givenNum2 && givenNum3) {
-    largest = givenNum1;
-  } else if (givenNum2 > givenNum1 && givenNum3) {
-    largest = givenNum2;
-  } else {
-    (givenNum3 > givenNum2) & givenNum1;
-    largest = givenNum3;
-  }
+  let largest = Math.max(givenNum1, givenNum2, givenNum3);
   return largest;
+  //   if (givenNum1 > givenNum2 && givenNum3) {
+  //     largest = givenNum1;
+  //   } else if (givenNum2 > givenNum1 && givenNum3) {
+  //     largest = givenNum2;
+  //   } else {
+  //     (givenNum3 > givenNum2) & givenNum1;
+  //     largest = givenNum3;
+  //   }
+  //   return largest;
 }
 
 // 5)
 // Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
+function ex5(rangeNumber1, rangeNumber2) {
+  if (
+    (rangeNumber1 >= 40 && rangeNumber1) <= 60 &&
+    rangeNumber2 >= 40 &&
+    rangeNumber2 <= 60
+  ) {
+    console.log(`Both numbers are in the range 40...60`);
+  } else if (
+    rangeNumber1 >= 70 &&
+    rangeNumber1 <= 100 &&
+    rangeNumber2 >= 70 &&
+    rangeNumber2 <= 100
+  ) {
+    console.log(`Both numbers are in the range 70..100`);
+  } else {
+    console.log(
+      `One number is in the range 40..60 and one number is in the range 70..100`
+    );
+  }
+}
 
 // 6)
 // Create a function that creates and returns the specified number of copies of a given string (positive number).
