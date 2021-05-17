@@ -98,6 +98,10 @@ function ex7(stringEx7) {
 // 8)
 // Create a function to calculate the sum of three elements of a given array of integers of length 3.
 
+function ex8(elementsEx8) {
+  return elementsEx8[0] + elementsEx8[1] + elementsEx8[2];
+}
+
 // 9)
 // Create a function to test whether an array of integers of length 2 contains 1 or a 3.
 
