@@ -27,6 +27,13 @@ function ex2(int3, int4) {
 // 3)
 // Create a function to remove a character at the specified position of a given string and return the new string.
 
+function ex3(str, pos) {
+  let newString = "Emilian";
+  newString = newString.substring(pos);
+
+  return newString;
+}
+
 // 4)
 //  Create a function to find the largest of three given integers.
 
