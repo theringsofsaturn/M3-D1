@@ -37,6 +37,19 @@ function ex3(str, pos) {
 // 4)
 //  Create a function to find the largest of three given integers.
 
+function ex4(givenNum1, givenNum2, givenNum3) {
+  let largest;
+  if (givenNum1 > givenNum2 && givenNum3) {
+    largest = givenNum1;
+  } else if (givenNum2 > givenNum1 && givenNum3) {
+    largest = givenNum2;
+  } else {
+    (givenNum3 > givenNum2) & givenNum1;
+    largest = givenNum3;
+  }
+  return largest;
+}
+
 // 5)
 // Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 
