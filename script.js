@@ -105,6 +105,14 @@ function ex8(elementsEx8) {
 // 9)
 // Create a function to test whether an array of integers of length 2 contains 1 or a 3.
 
+function ex9(intEx9) {
+  if (intEx9.includes(1) || intEx9.includes(3)) {
+    console.log(`It includes 1 or 3`);
+  } else {
+    console.log(`Doesnt include 1 or 3`);
+  }
+}
+
 // 10)
 // Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
 
