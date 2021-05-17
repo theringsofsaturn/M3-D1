@@ -77,13 +77,23 @@ function ex5(rangeNumber1, rangeNumber2) {
 // 6)
 // Create a function that creates and returns the specified number of copies of a given string (positive number).
 
-function ex5(stringEx5, numEx5) {
+function ex6(stringEx5, numEx5) {
   if (numEx5 < 0) return false;
   else return stringEx5.repeat(numEx5);
 }
 console.log(ex5("Hello", 3));
 // 7)
 // Create a function that returns the city name of a given string, if the string begins with "Los" or "New", otherwise returns blank.
+
+function ex7(stringEx7) {
+  let stringEx7Result = "";
+  if (string.startsWith("Los")) {
+    stringEx7Result = "Los Angeles";
+  } else if (string.startsWith("New")) {
+    stringEx7Result = "New York";
+  }
+  return stringEx7Result;
+}
 
 // 8)
 // Create a function to calculate the sum of three elements of a given array of integers of length 3.
