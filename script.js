@@ -78,10 +78,9 @@ function ex5(rangeNumber1, rangeNumber2) {
 // Create a function that creates and returns the specified number of copies of a given string (positive number).
 
 function ex6(stringEx5, numEx5) {
-  if (numEx5 < 0) return false;
-  else return stringEx5.repeat(numEx5);
+  return stringEx5.repeat(numEx5);
 }
-console.log(ex5("Hello", 3));
+console.log(ex6("Hello", 3));
 // 7)
 // Create a function that returns the city name of a given string, if the string begins with "Los" or "New", otherwise returns blank.
 
