@@ -116,6 +116,14 @@ function ex9(intEx9) {
 // 10)
 // Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
 
+function ex10(intEx10) {
+  if (!intEx10.includes(1) && !intEx10.includes(3)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 // 11)
 // Create a function to find the longest string from a given array of strings.
 
