@@ -135,7 +135,6 @@ order of characters
  */
 const reverseStr = (str) => str.split("").reverse().join("");
 
-
 /* 8) CHUNK
 
 Given an array and chunk size, divide the array into many subarrays
@@ -150,13 +149,41 @@ where each subarray is of length size
     chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 */
 const chunk = (arr, n) => {
-    const chunks = [];
-    let i = 0;
-    let length = arr.length;
-  
-    while (i < length) {
-      chunks.push(arr.slice(i, (i += n)));
-    }
-    return chunks;
-  };
-  console.log(chunk([1, 2, 3, 4], 2));
+  const chunks = [];
+  let i = 0;
+  let length = arr.length;
+
+  while (i < length) {
+    chunks.push(arr.slice(i, (i += n)));
+  }
+  return chunks;
+};
+console.log(chunk([1, 2, 3, 4], 2));
+
+/* 9) PYRAMID
+
+Write a function that accepts a positive number N.
+The function should console log a pyramid shape
+with N levels using the # character.  Make sure the
+pyramid has spaces on both the left and right hand sides
+
+--- Examples
+
+    pyramid(1)
+        '#'
+    pyramid(2)
+        ' # '
+        '###'
+    pyramid(3)
+        '  #  '
+        ' ### '
+        '#####' */
+const pyramid = (height) => {
+  for (let i = 0; i < height; i++) {
+    // 2n+1
+    let stars = "*".repeat(2 * i + 1);
+    let spacesBefore = " ".repeat(height - i - 1);
+    console.log(spacesBefore + stars);
+  }
+};
+pyramid(4);
