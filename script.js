@@ -25,6 +25,11 @@ const isFifty = function (a, b) {
 // 3)
 // Create a function to remove a character at the specified position of a given string and return the new string.
 
+const removeChar = function (str, pos) {
+  return str.slice(0, pos) + str.slice(pos + 1);
+};
+//console.log(removeChar("strive", 3));
+
 // 4)
 //  Create a function to find the largest of three given integers.
 
