@@ -95,6 +95,19 @@ console.log(totalSum(3, 6, 4));
 // 9)
 // Create a function to test whether an array of integers of length 2 contains 1 or a 3.
 
+const checkArray = function (arr) {
+  //   if (arr[0] === 1 || arr[0] === 3 || arr[1] === 1 || arr[1] === 3) {
+  //     console.log("arr contains 1 or 3");
+  //   } else {
+  //     console.log(" arr doesn nott  contain 1 or 3");
+  //   }
+  if (arr.includes(1) || arr.includes(3)) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
 // 10)
 // Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
 
