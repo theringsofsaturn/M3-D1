@@ -33,6 +33,11 @@ const removeChar = function (str, pos) {
 // 4)
 //  Create a function to find the largest of three given integers.
 
+const findLargestInt = function (...args) {
+  const sorted = args.sort((a, b) => b - a);
+  return sorted[0];
+};
+
 // 5)
 // Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 
