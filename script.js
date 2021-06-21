@@ -216,6 +216,15 @@ const checkSumRange = function (a, b) {
 // 18)
 // Create a function to convert a number to a string, the content of which depends on the number's factors. Follow next example:
 
+const numToStrByFactor = function (num) {
+  let str = "";
+  if (num % 3 === 0) str += "Diego";
+  if (num % 5 === 0) str += "Riccardo";
+  if (num % 7 === 0) str += "Stefano";
+  return str;
+};
+console.log(numToStrByFactor(21));
+
 // If the number has 3 as a factor, output 'Diego'.
 // If the number has 5 as a factor, output 'Riccardo'.
 // If the number has 7 as a factor, output 'Stefano'.
