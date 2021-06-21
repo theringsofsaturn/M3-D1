@@ -3,125 +3,40 @@
 // 1)
 // Create a function to calculate the sum of the two given integers. If the two values are the same, then returns the triple of their sum.
 
-function ex1(int1, int2) {
-  let sumResult = int1 + int2;
-  if (int1 !== int2) {
-    return sumResult;
+const sum = function (a, b) {
+  if (a === b) {
+    return (a + b) * 3;
   } else {
-    sumResult * 3;
+    return a + b;
   }
-}
+};
 
 // 2)
 // Create a function to check two given numbers. Return true if one of the numbers is 50, or if their sum is 50.
 
-function ex2(int3, int4) {
-  let sumResult2 = int3 + int4;
-  if (sumResult2 === 50 || int3 === 50 || int4 === 50) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
 // 3)
 // Create a function to remove a character at the specified position of a given string and return the new string.
-
-function ex3(str, pos) {
-  let newString = "Emilian";
-  newString = newString.substring(pos);
-
-  return newString;
-}
 
 // 4)
 //  Create a function to find the largest of three given integers.
 
-function ex4(givenNum1, givenNum2, givenNum3) {
-  let largest = Math.max(givenNum1, givenNum2, givenNum3);
-  return largest;
-  //   if (givenNum1 > givenNum2 && givenNum3) {
-  //     largest = givenNum1;
-  //   } else if (givenNum2 > givenNum1 && givenNum3) {
-  //     largest = givenNum2;
-  //   } else {
-  //     (givenNum3 > givenNum2) & givenNum1;
-  //     largest = givenNum3;
-  //   }
-  //   return largest;
-}
-
 // 5)
 // Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
-function ex5(rangeNumber1, rangeNumber2) {
-  if (
-    (rangeNumber1 >= 40 && rangeNumber1) <= 60 &&
-    rangeNumber2 >= 40 &&
-    rangeNumber2 <= 60
-  ) {
-    console.log(`Both numbers are in the range 40...60`);
-  } else if (
-    rangeNumber1 >= 70 &&
-    rangeNumber1 <= 100 &&
-    rangeNumber2 >= 70 &&
-    rangeNumber2 <= 100
-  ) {
-    console.log(`Both numbers are in the range 70..100`);
-  } else {
-    console.log(
-      `One number is in the range 40..60 and one number is in the range 70..100`
-    );
-  }
-}
 
 // 6)
 // Create a function that creates and returns the specified number of copies of a given string (positive number).
 
-function ex6(stringEx5, numEx5) {
-  return stringEx5.repeat(numEx5);
-}
-console.log(ex6("Hello", 3));
 // 7)
 // Create a function that returns the city name of a given string, if the string begins with "Los" or "New", otherwise returns blank.
-
-function ex7(stringEx7) {
-  let stringEx7Result = "";
-  if (string.startsWith("Los")) {
-    stringEx7Result = "Los Angeles";
-  } else if (string.startsWith("New")) {
-    stringEx7Result = "New York";
-  }
-  return stringEx7Result;
-}
 
 // 8)
 // Create a function to calculate the sum of three elements of a given array of integers of length 3.
 
-function ex8(elementsEx8) {
-  return elementsEx8[0] + elementsEx8[1] + elementsEx8[2];
-}
-
 // 9)
 // Create a function to test whether an array of integers of length 2 contains 1 or a 3.
 
-function ex9(intEx9) {
-  if (intEx9.includes(1) || intEx9.includes(3)) {
-    console.log(`It includes 1 or 3`);
-  } else {
-    console.log(`Doesnt include 1 or 3`);
-  }
-}
-
 // 10)
 // Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
-
-function ex10(intEx10) {
-  if (!intEx10.includes(1) && !intEx10.includes(3)) {
-    return true;
-  } else {
-    return false;
-  }
-}
 
 // 11)
 // Create a function to find the longest string from a given array of strings.
