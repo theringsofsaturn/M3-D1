@@ -68,8 +68,7 @@ const isPolindrome = (str) =>
   str.split(" ").join("") ===
   str.split(" ").join("").split("").reverse().join("");
 
-
-  /* 5) REVERSE INT
+/* 5) REVERSE INT
 
 Given an integer, return an integer that is the reverse
 ordering of numbers.
@@ -83,8 +82,7 @@ ordering of numbers.
     reverseInt(-90) === -9
  */
 const reverseInt = (n) =>
-parseFloat(n.toString().split("").reverse().join("")) * Math.sign(n);
-
+  parseFloat(n.toString().split("").reverse().join("")) * Math.sign(n);
 
 /* 6) STEPS
 
@@ -108,18 +106,31 @@ step has spaces on the right hand side!
         '### '
         '####' */
 
-        const steps = (n) => {
-            for (let i = 0; i < n; i++) {
-              let step = " ";
-          
-              for (let j = 0; j < n; j++) {
-                if (j <= i) {
-                  step += "#";
-                } else {
-                  step += " ";
-                }
-              }
-              console.log(step);
-            }
-          };
-          steps(4);
+const steps = (n) => {
+  for (let i = 0; i < n; i++) {
+    let step = " ";
+
+    for (let j = 0; j < n; j++) {
+      if (j <= i) {
+        step += "#";
+      } else {
+        step += " ";
+      }
+    }
+    console.log(step);
+  }
+};
+steps(4);
+
+/* 7) REVERSE STRING
+
+Given a string, return a new string with the reversed
+order of characters
+
+--- Examples
+
+    reverse('apple') === 'leppa'
+    reverse('hello') === 'olleh'
+    reverse('Greetings!') === '!sgniteerG'
+ */
+const reverseStr = (str) => str.split("").reverse().join("");
