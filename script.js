@@ -55,6 +55,19 @@ checkRange(40, 50);
 // 6)
 // Create a function that creates and returns the specified number of copies of a given string (positive number).
 
+const createCopies = function (str, n) {
+  if (n <= 0) {
+    return "n should be positive";
+  } else {
+    let copies = "";
+    for (let i = 0; i < n; i++) {
+      copies += str + " ";
+    }
+    return copies;
+  }
+};
+console.log(createCopies("strive", 4));
+
 // 7)
 // Create a function that returns the city name of a given string, if the string begins with "Los" or "New", otherwise returns blank.
 
