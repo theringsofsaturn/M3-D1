@@ -122,6 +122,18 @@ const notIncludes = function (arr) {
 // 11)
 // Create a function to find the longest string from a given array of strings.
 
+const getLongestStr = function (arr) {
+  const temp = [];
+  for (let i = 0; i < arr.length; i++) {
+    temp.push(arr[i].length);
+  }
+  const largest = [...temp].sort((a, b) => b - a)[0];
+  const index = temp.indexOf(largest);
+
+  return arr[index];
+};
+console.log(getLongestStr(["aa", "ccccc", "ddd"]));
+
 // 12)
 // Create a function to find the types of a given angle.
 
@@ -130,6 +142,18 @@ const notIncludes = function (arr) {
 //     Right angle: An 90 degree angle.
 //     Obtuse angle: An angle between 90 and 180 degrees.
 //     Straight angle: A 180 degree angle.
+
+const angleType = function (angle) {
+  if (angle < 90) {
+    return "acute";
+  } else if (angle === 90) {
+    return "right";
+  } else if (angle < 180) {
+    return "obtuse";
+  } else {
+    return "straight";
+  }
+};
 
 // 13)
 // Create a function to find the index of the greatest element of a given array of integers
