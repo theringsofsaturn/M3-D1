@@ -158,6 +158,13 @@ const angleType = function (angle) {
 // 13)
 // Create a function to find the index of the greatest element of a given array of integers
 
+const findIndexofLargestInt = function (arr) {
+  const largest = [...arr].sort((a, b) => b - a)[0];
+  console.log(largest);
+  return arr.indexOf(largest);
+};
+console.log(findIndexofLargestInt([4, 8, 2]));
+
 // 14)
 // Create a function to get the largest even number from an array of integers.
 
