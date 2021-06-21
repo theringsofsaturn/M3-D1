@@ -51,3 +51,19 @@ const anagrams2 = (str, arr) => {
   });
   return anagrams;
 };
+
+/* 4) PALINDROME
+
+Given a string, return true if the string is a palindrome
+or false if it is not.  Palindromes are strings that
+form the same word if it is reversed. Do include spaces
+and punctuation in determining if the string is a palindrome.
+
+--- Examples:
+
+    palindrome("abba") === true
+    palindrome("abcdefg") === false
+ */
+const isPolindrome = (str) =>
+  str.split(" ").join("") ===
+  str.split(" ").join("").split("").reverse().join("");
