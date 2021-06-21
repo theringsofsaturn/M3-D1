@@ -168,6 +168,17 @@ console.log(findIndexofLargestInt([4, 8, 2]));
 // 14)
 // Create a function to get the largest even number from an array of integers.
 
+const getLargestEven = function (arr) {
+  const temp = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      temp.push(arr[i]);
+    }
+  }
+  return temp.sort((a, b) => b - a)[0];
+};
+console.log(getLargestEven([3, 8, 1, 9, 4, 6]));
+
 // 15)
 // Create a function to check from two given integers, whether one is positive and another one is negative.
 
