@@ -71,6 +71,15 @@ console.log(createCopies("strive", 4));
 // 7)
 // Create a function that returns the city name of a given string, if the string begins with "Los" or "New", otherwise returns blank.
 
+const startsWith = function (str) {
+  if (str.startsWith("Los") || str.startsWith("New")) {
+    return str;
+  } else {
+    return "";
+  }
+};
+console.log(startsWith("Los Angeles"));
+
 // 8)
 // Create a function to calculate the sum of three elements of a given array of integers of length 3.
 
