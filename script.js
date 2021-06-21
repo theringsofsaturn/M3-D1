@@ -205,6 +205,14 @@ console.log(convertCase("strive"));
 // 17)
 // Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
 
+const checkSumRange = function (a, b) {
+  if (a + b > 50 && a + b < 80) {
+    return 65;
+  } else {
+    return 80;
+  }
+};
+
 // 18)
 // Create a function to convert a number to a string, the content of which depends on the number's factors. Follow next example:
 
