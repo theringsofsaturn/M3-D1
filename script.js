@@ -83,6 +83,15 @@ console.log(startsWith("Los Angeles"));
 // 8)
 // Create a function to calculate the sum of three elements of a given array of integers of length 3.
 
+const totalSum = function (...args) {
+  let sum = 0;
+  for (let i = 0; i < args.length; i++) {
+    sum += args[i];
+  }
+  return sum;
+};
+console.log(totalSum(3, 6, 4));
+
 // 9)
 // Create a function to test whether an array of integers of length 2 contains 1 or a 3.
 
