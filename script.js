@@ -239,3 +239,13 @@ console.log(numToStrByFactor(21));
 
 // 19)
 // Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
+
+const getAcronym = function (str) {
+  const temp = str.split(" ");
+  let acronym = "";
+  for (let i = 0; i < temp.length; i++) {
+    acronym += temp[i].charAt(0).toUpperCase();
+  }
+  return acronym;
+};
+console.log(getAcronym("British Broadcasting Corporation"));
